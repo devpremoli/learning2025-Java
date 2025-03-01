@@ -46,7 +46,7 @@ public class AnonymousClass {
         Function<Integer, Integer> newSquare = x -> x * x; // lambda expression
         System.out.println(newSquare.apply(5));
 
-        Function<Integer, Integer> squareMethodRef = AnonymousClass::squareMethod; // method expression
+        Function<Integer, Integer> squareMethodRef = AnonymousClass::squareMethod; // method reference
         System.out.println(squareMethodRef.apply(5));
 
         // String::length is equivalent to str -> str.length()
